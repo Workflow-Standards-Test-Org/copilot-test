@@ -1,0 +1,30 @@
+plugins {
+  id "jacoco"
+  id "java"
+  id "org.sonarqube" version "3.5.0.2730"
+}
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  implementation 'com.google.guava:guava:21.0'
+  testImplementation 'junit:junit:4.12'
+}
+
+jacocoTestReport {
+  reports {
+    xml.enabled true
+  }
+}
+
+sonarqube {
+  properties {
+    property "sonar.projectVersion", "1.0-SNAPSHOT"
+    property "sonar.sources", "src/main/"
+    property "sonar.tests", "src/test/"
+    property "sonar.projectKey", "wouter-admiraal-sonarsource_java-example_AYYm25XMFXtF_70zfPOz"
+    property "sonar.projectName", "java-example"
+  }
+}
