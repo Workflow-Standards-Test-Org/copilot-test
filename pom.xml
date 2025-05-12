@@ -12,6 +12,10 @@
     <sonar.projectKey>java-example:maven</sonar.projectKey>
     <sonar.sources>src/main/</sonar.sources>
     <sonar.tests>src/test/</sonar.tests>
+
+    <sonar.organization>workflow-standards-test-org</sonar.organization>
+    <sonar.projectKey>Workflow-Standards-Test-Org_copilot-test</sonar.projectKey>
+    <sonar.host.url>https://dev12.sc-dev12.io</sonar.host.url>
   </properties>
 
   <dependencies>
